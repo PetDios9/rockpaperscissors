@@ -1,0 +1,73 @@
+<script>
+const computerPlay = () => {
+    let number = Math.floor(Math.random()*3);
+    switch (number) {
+        case 0:
+         return 'rock';
+         break;
+        case 1:
+         return 'scissors';
+         break;
+        case 2:
+         return 'paper';
+         break;
+    }
+}
+computerPlay();
+const playRound = (playerSelection, computerSelection) => {
+    let selection = playerSelection;
+    if (selection == computerSelection) {
+        return 'Draw!';
+    } else if (selection == 'rock' && computerSelection == 'paper') {
+        return 'You Lose! Paper Beats Rock!';
+    } else if (selection == 'rock' && computerSelection == 'scissors') {
+            return 'You Win! Rock Beats Scissors!';
+    } else if (selection == 'paper' && computerSelection == 'scissors') {
+        return 'You Lose! Scissors Beats Rock!';
+    } else if (selection == 'paper' && computerSelection == 'rock') {
+        return 'You Win! Paper Beats Rock!';
+    } else if (selection == 'scissors' && computerSelection == 'rock') {
+        return 'You Lose! Rock Beats Scissors!'; 
+    } else if (selection == 'scissors' && computerSelection == 'paper') {
+        return 'You Win! Scissors Beats Paper!';
+        }
+}
+
+let playerSelection = 'scissors';
+let computerWinsCount = 0;
+let playerWinsCount = 0;
+let game = () =>{
+for (let i = 0; i < 5; i++) {
+let computerSelection = computerPlay();
+   let victory = playRound(playerSelection, computerSelection);
+    switch (victory) {
+        case 'You Lose! Paper Beats Rock!':
+        case 'You Lose! Scissors Beats Rock!':
+        case 'You Lose! Rock Beats Scissors!':
+             computerWinsCount++;
+             console.log(`Player has ${playerWinsCount} points!`)
+            break;
+        case 'You Win! Rock Beats Scissors!':
+        case 'You Win! Paper Beats Rock!':
+        case 'You Win! Scissors Beats Paper!':
+            playerWinsCount++;
+            console.log(`Computer has ${computerWinsCount} points!`)
+            break;
+        }
+    }
+}
+game();
+console.log(playerWinsCount);
+console.log(computerWinsCount);
+let declareWinner = () => {
+    if (playerWinsCount > computerWinsCount) {
+            console.log('Player Wins!');
+        } else if (computerWinsCount > computerWinsCount) {
+            console.log('Computer Wins!');
+        } else {
+            console.log('It is a tie!')
+        }
+}
+declareWinner();
+
+</script>
