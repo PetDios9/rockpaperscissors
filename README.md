@@ -1,0 +1,1 @@
+In this project named "Rock, Paper, Scissors", I used my fundamental knowledge that I've gained to create a game of the same name using only Javascript.
