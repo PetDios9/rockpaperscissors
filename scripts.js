@@ -1,4 +1,3 @@
-<script>
     const computerPlay = () => {                                                        // determines computer choice between rock paper scissors
         let number = Math.floor(Math.random()*3);
         switch (number) {
@@ -74,4 +73,3 @@
             }
     }
     declareWinner();
-    </script> 
