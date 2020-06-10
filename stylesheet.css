@@ -1,0 +1,82 @@
+
+html{
+    background-color: #111111;
+    font-family: 'Arvo', serif;
+    color: #FFFFFF;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    text-align: center;
+}
+
+h1 {
+    padding: 1em 0em;
+    margin: 0 0 2rem 0;
+    background-color: rgb(165, 65, 65);
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#instructions {
+    margin-top: 4rem;
+}
+ol{
+    text-align: center;
+    list-style-position: inside;
+}
+
+#step1{
+    padding-bottom: 1rem;
+}
+
+#player-score-box, #computer-score-box {
+    height: 15em;
+    width: 15em;
+    margin-top: 2.5rem;
+    background-color: rgb(165, 65, 65);
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+
+
+#score-boxes{
+    height: 20em;
+    margin: 0rem 30rem;
+    display: flex;
+    justify-content: space-around;
+}
+#choice-text {
+    width: 20rem;
+}
+
+form {
+    padding: 20rem, 10rem;
+}
+
+button {
+    font-family: 'Arvo' , serif;
+    margin: 0rem 1rem;
+    padding: .5rem;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#buttons{
+   align-items: center;
+   position: relative;
+   margin-top: 2rem;
+}
+
