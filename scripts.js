@@ -1,3 +1,5 @@
+let userNameInput = prompt('What is your name?');
+document.getElementById('username').innerHTML = userNameInput;
 const computerSelection = () => {                   // get computer choice
    let choiceNumber = Math.floor(Math.random() * 3);
     switch (choiceNumber) {
