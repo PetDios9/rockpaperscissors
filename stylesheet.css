@@ -35,6 +35,12 @@ ol{
     padding-bottom: 1rem;
 }
 
+#names {
+    display: flex;
+    justify-content: space-around;
+    margin: 0rem 30rem;
+}
+
 #player-score-box, #computer-score-box {
     height: 15em;
     width: 15em;
